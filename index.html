@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added comprehensive meta tags for SEO and social sharing -->
+    <meta name="description" content="The Indian School Annual Exhibition 2025 - STEM, Art and Innovation. Explore student projects, interactive displays, and innovative learning experiences across multiple venues.">
+    <meta name="keywords" content="The Indian School, Annual Exhibition, STEM, Art, Innovation, Education, Student Projects, Delhi School">
+    <meta name="author" content="Aaryan Sehgal">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theindianschool-exhibition.com/">
+    <meta property="og:title" content="The Indian School Annual Exhibition 2025">
+    <meta property="og:description" content="STEM, Art and Innovation - Explore student projects and interactive displays at our annual exhibition on August 23, 2025.">
+    <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17558308637306-0ab8cdf1-193c-46eb-a465-7b3729ddb8ab-1%20%281%29.jpg-KMsheLyxgt1u2stZX7cLxruIX3qKVL.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://theindianschool-exhibition.com/">
+    <meta property="twitter:title" content="The Indian School Annual Exhibition 2025">
+    <meta property="twitter:description" content="STEM, Art and Innovation - Explore student projects and interactive displays at our annual exhibition on August 23, 2025.">
+    <meta property="twitter:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17558308637306-0ab8cdf1-193c-46eb-a465-7b3729ddb8ab-1%20%281%29.jpg-KMsheLyxgt1u2stZX7cLxruIX3qKVL.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#720000">
+    <meta name="msapplication-TileColor" content="#720000">
+    
+    <title>The Indian School - Annual Exhibition 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Added preload for critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+</head>
+<body>
+    <!-- Added skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+        <div class="loading-content">
+            <div class="loading-spinner" role="status" aria-label="Loading"></div>
+            <h2>Loading Exhibition...</h2>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="nav-menu" class="nav-menu" role="menu">
+                <a href="#home" class="nav-link" role="menuitem" aria-label="Go to home section">Home</a>
+                <a href="#venues" class="nav-link" role="menuitem" aria-label="Go to venues section">Venues</a>
+                <a href="#theme" class="nav-link" role="menuitem" aria-label="Go to theme section">Theme</a>
+                <a href="#citizenship" class="nav-link" role="menuitem" aria-label="Go to citizenship section">Citizenship</a>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        /* Navbar container */
+        .navigation {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background: white; /* same as website background */
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* Hamburger button */
+        .nav-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+            cursor: pointer;
+            background: white; /* white button */
+            border: none;
+            padding: 8px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            height: 3px;
+            background: black; /* black lines */
+            border-radius: 2px;
+        }
+
+        /* Dropdown Menu */
+        .nav-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu a {
+            padding: 12px 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            background: #f2f2f2;
+        }
+
+        .nav-menu.active {
+            display: flex;
+        }
+    </style>
+
+
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="school-logo">
+                        
+                    </div>
+                    <h1 id="hero-title" class="school-name">The Indian School</h1>
+                    <h2 class="exhibition-title">Annual Exhibition '25</h2>
+                    <div class="exhibition-details">
+                        <p class="exhibition-date">Discover innovative projects, creative expressions, and academic excellence as our students showcase their learning journey through interactive exhibits and demonstrations.</p>
+                    
+                    </div>
+                    <button id="explore-btn" class="explore-btn" aria-label="Explore exhibition venues">Explore Exhibition</button>
+                </div>
+                
+                <div class="hero-slideshow" role="region" aria-label="Exhibition image slideshow">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                            <img src="Images/i19a9335-1724240086183.jpg" alt="Students and teachers exploring project exhibits in the auditorium" loading="eager">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/IMG_7822.JPG" alt="Student demonstrating aeromodelling project at the skating rink" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/IMG_7816.JPG" alt="Student working with robotics and engineering projects" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/17558308637306-0ab8cdf1-193c-46eb-a465-7b3729ddb8ab-1.jpg" alt="The Indian School Annual Exhibition poster featuring STEM, Art and Innovation theme" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="slideshow-dots" role="tablist" aria-label="Slideshow navigation">
+                        <button class="dot active" data-slide="0" role="tab" aria-label="Go to slide 1" aria-selected="true"></button>
+                        <button class="dot" data-slide="1" role="tab" aria-label="Go to slide 2" aria-selected="false"></button>
+                        <button class="dot" data-slide="2" role="tab" aria-label="Go to slide 3" aria-selected="false"></button>
+                        <button class="dot" data-slide="3" role="tab" aria-label="Go to slide 4" aria-selected="false"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venues Section -->
+        <section id="venues" class="venues-section" aria-labelledby="venues-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="venues-title">Exhibition Venues</h2>
+                </div>
+                <div id="venues-grid" class="venues-grid" role="list">
+                    <!-- Initial Venues -->
+                    <article class="venue-card" role="listitem">
+                        <div class="venue-image">
+                            <img src="/Images/i19a9794-17242400956850.jpg" alt="Students and teachers exploring project exhibits in the auditorium" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Auditorium</h3>
+                            <p class="venue-classes">Class IX-XII</p>
+                            <p class="venue-description">Main exhibition hall featuring comprehensive academic displays and interactive demonstrations.</p>
+                            <div class="venue-subjects">
+                                <h4>Subjects Featured:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">Science</span>
+                                    <span class="tag" role="listitem">Languages</span>
+                                    <span class="tag" role="listitem">Mathematics</span>
+                                    <span class="tag" role="listitem">Computer Science</span>
+                                    <span class="tag" role="listitem">Social Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="venue-card" role="listitem">
+                        <div class="venue-image">
+                            <img src="/Images/i19a9551-17242400886108.jpg" alt="Student demonstrating aeromodelling project at the skating rink" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Skating Rink</h3>
+                            <p class="venue-description">Outdoor venue showcasing hands-on activities and innovative student projects.</p>
+                            <div class="venue-subjects">
+                                <h4>Activities Featured:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">Aeromodelling</span>
+                                    <span class="tag" role="listitem">Ignited Mindz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Additional Venues (Hidden Initially) -->
+                    <article class="venue-card additional-venue" style="display: none;" role="listitem">
+                        <div class="venue-image">
+                            <img src="Images/i19a9374-17242400861197.jpg" alt="Library exhibition and citizenship program display outside auditorium" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Outside Auditorium</h3>
+                            <p class="venue-description">Features the library exhibition and the Shramdaan Section aligned with the school citizenship program.</p>
+                            <div class="venue-subjects">
+                                <h4>Features:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">Library Exhibition</span>
+                                    <span class="tag" role="listitem">Shramdaan Section</span>
+                                    <span class="tag" role="listitem">Citizenship Program</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+            
+                    <article class="venue-card additional-venue" style="display: none;" role="listitem">
+                        <div class="venue-image">
+                            <img src="Images/i19a9417-17242400855795.jpg" alt="Middle school students displaying their projects in principal's corridor" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Principal's Corridor</h3>
+                            <p class="venue-classes">Class VI-VIII</p>
+                            <p class="venue-description">Exhibition venue featuring displays from all subjects for middle school students.</p>
+                            <div class="venue-subjects">
+                                <h4>Features:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">All Subjects</span>
+                                    <span class="tag" role="listitem">Class VI-VIII</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="venue-card additional-venue" style="display: none;" role="listitem">
+                        <div class="venue-image">
+                            <img src="Images/i19a9385-17242400851041.jpg" alt="Psychology section exhibition at the reception area" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Reception</h3>
+                            <p class="venue-description">Features the psychology section of the exhibition with interactive displays.</p>
+                            <div class="venue-subjects">
+                                <h4>Features:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">Psychology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="venue-card additional-venue" style="display: none;" role="listitem">
+                        <div class="venue-image">
+                            <img src="Images/i19a9422-17242400872274.jpg" alt="Fashion, business studies and economics exhibition at second reception" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>Second Reception</h3>
+                            <p class="venue-description">Venue for Fashion, Business Studies and Economics exhibition displays.</p>
+                            <div class="venue-subjects">
+                                <h4>Features:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">Fashion Studies</span>
+                                    <span class="tag" role="listitem">Business Studies</span>
+                                    <span class="tag" role="listitem">Economics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="venue-card additional-venue" style="display: none;" role="listitem">
+                        <div class="venue-image">
+                            <img src="Images/i19a9480-17242400879305.jpg" alt="Primary school students with creative displays on first floor" loading="lazy">
+                        </div>
+                        <div class="venue-content">
+                            <h3>First Floor</h3>
+                            <p class="venue-classes">Class I-V</p>
+                            <p class="venue-description">Exhibition venue for all subjects of primary school classes with creative displays.</p>
+                            <div class="venue-subjects">
+                                <h4>Features:</h4>
+                                <div class="subject-tags" role="list">
+                                    <span class="tag" role="listitem">All Subjects</span>
+                                    <span class="tag" role="listitem">Class I-V</span>
+                                    <span class="tag" role="listitem">Creative Arts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="venues-toggle">
+                    <button id="venues-toggle-btn" class="toggle-btn" aria-expanded="false" aria-controls="venues-grid">Show All Venues</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Theme Section -->
+        <section id="theme" class="theme-section" aria-labelledby="theme-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="theme-title">Our Theme</h2>
+                </div>
+                <div class="theme-content">
+                    <div class="theme-text">
+                        <h3>STEM, ART AND INNOVATION</h3>
+                        <p class="theme-description">
+                            Our exhibition celebrates the convergence of Science, Technology, Engineering, Mathematics, Art, and Innovation. Students explore interdisciplinary connections that bridge analytical thinking with creative expression.
+                        </p>
+                        <p class="theme-description">
+                            Through hands-on experiments, artistic creations, technological innovations, and collaborative projects, our students demonstrate how STEM and Art work together to solve real-world challenges and inspire meaningful change in our community.
+                        </p>
+                        <p class="theme-description">
+                            This integrated approach fosters critical thinking, creativity, and innovation, preparing students to become tomorrow's leaders in an increasingly interconnected world.
+                        </p>
+                        
+                        <div class="focus-areas">
+                            <h4>Key Focus Areas:</h4>
+                            <div class="focus-tags" role="list">
+                                <span class="focus-tag" role="listitem">Scientific Research</span>
+                                <span class="focus-tag" role="listitem">Creative Arts</span>
+                                <span class="focus-tag" role="listitem">Technology Innovation</span>
+                                <span class="focus-tag" role="listitem">Engineering Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme-images">
+                        <!-- Cover Image -->
+                        <div class="cover-image">
+                            <img src="Images/17558308637306-0ab8cdf1-193c-46eb-a465-7b3729ddb8ab-1.jpg" alt="The Indian School Annual Exhibition poster featuring STEM, Art and Innovation theme" loading="lazy">
+                        </div>
+
+                        <!-- Original Collage -->
+                        <div class="image-collage">
+                            <div class="collage-grid">
+                                <img src="Images/glove.JPG" alt="Student working with robotics and engineering projects" loading="lazy">
+                                <img src="Images/chart.jpg" alt="Students creating art projects in library setting" loading="lazy">
+                                <img src="Images/bulb.jpg" alt="Student conducting physics experiments with lighting equipment" loading="lazy">
+                                <img src="Images/chem.jpg" alt="Students engaged in collaborative STEM learning activities" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citizenship Section -->
+        <section id="citizenship" class="citizenship-section" aria-labelledby="citizenship-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="citizenship-title">School Citizenship Program</h2>
+                </div>
+                <div class="citizenship-content">
+                    <div class="citizenship-text">
+                        <p class="citizenship-description">
+                            At The Indian School, our Citizenship Programme empowers students with essential life skills and values such as compassion, commitment, respect and resourcefulness. It goes beyond academics to nurture responsible and aware individuals.
+                        </p>
+                        <p class="citizenship-description">
+                            Through Classroom Curriculum sessions, motivational workshops and activities like Nukkad Natak, Shramdaan crafts and service visits to hospitals and senior homes, students gain a deeper understanding of their rights and social responsibilities.
+                        </p>
+                    </div>
+
+                    <div class="citizenship-images">
+                        <div class="citizenship-grid">
+                            <img src="Images/17002067746827-citizenship-6.jpg" alt="Students holding banner for Meri Dilli Meri Yamuna environmental campaign" loading="lazy">
+                            <img src="Images/1700207680846-citizenship-3.jpg" alt="Students participating in Shramdaan community service activities" loading="lazy">
+                            <img src="Images/17018460067893-citizenship.jpg" alt="Teacher conducting outdoor citizenship program activities with students" loading="lazy">
+                            <img src="O.jpeg" alt="Students creating colorful crafts as part of citizenship program" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <h3 class="school-name">The Indian School</h3>
+            <p class="exhibition-year">Annual Exhibition 2025</p>
+            <div class="footer-credits">
+                <p class="project-credit">A Computer Science Project By Aaryan Sehgal & Vansh Sharma</p>
+                <p class="image-source">
+                    Image source: 
+                    <a href="https://www.theindianschool.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Indian School website">theindianschool.in</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added error handling and fallback script -->
+    <script>
+        // Basic error handling for script loading
+        window.addEventListener('error', function(e) {
+            console.warn('Script error:', e.error);
+        });
+        
+        // Fallback for browsers without JavaScript
+        if (!window.addEventListener) {
+            document.body.className += ' no-js';
+        }
+    </script>
+    <script src="script.js" defer></script>
+    
+    <!-- Added structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "The Indian School Annual Exhibition 2025",
+        "description": "STEM, Art and Innovation exhibition featuring student projects and interactive displays",
+        "startDate": "2025-08-23T08:30:00+05:30",
+        "endDate": "2025-08-23T12:30:00+05:30",
+        "location": {
+            "@type": "Place",
+            "name": "The Indian School",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Delhi",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "The Indian School",
+            "url": "https://www.theindianschool.in/"
+        },
+        "theme": "STEM, Art and Innovation"
+    }
+    </script>
+</body>
+</html>
